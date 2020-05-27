@@ -1,0 +1,106 @@
+.team
+  margin-top: 92px
+
+  .team-text
+    color: $gray-font
+    font-family: "Roboto", sans-serif
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+    padding: 0 123px
+    margin-top: 46px
+    text-align: center
+
+  .team-list
+    display: flex
+    justify-content: space-between
+    margin-top: 92px
+
+    .team-list-item
+      width: 380px
+
+      &__img
+        height: 470px
+        width: 380px
+
+      .team-top
+        position: relative
+
+        &:after
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          bottom: 0
+          right: 0
+          transition: all .3s ease-in-out
+          background-image: linear-gradient(0deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%)
+          visibility: hidden
+          opacity: 0
+
+        &:hover
+          background: $blue
+
+          &:after
+            visibility: visible
+            opacity: 1
+            transform: translate(-10px, -10px)
+
+          & .team-social
+            visibility: visible
+            opacity: 1
+
+          .team-list-item__img
+            transform: translate(-10px, -10px)
+
+      &__img
+        transition: all .3s ease-in-out
+
+      .team-social
+        visibility: hidden
+        opacity: 0
+        transition: visibility 0.3s linear, opacity 0.3s linear
+        display: flex
+        position: absolute
+        top: calc(207px - 10px)
+        left: calc(78px - 10px)
+        z-index: 999
+
+        &:hover
+          visibility: visible
+          opacity: 1
+
+        &__item
+          height: 56px
+          width: 56px
+          background: $yellow
+          display: flex
+          align-items: center
+          justify-content: center
+
+          svg
+            fill: $red
+
+          &:hover
+            background: $red
+
+            & svg
+              fill: #fff
+
+      &__name
+        color: $dark-font
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: center
+        margin-top: 31px
+
+      &__position
+        color: $gray-font
+        font-family: "Roboto", sans-serif
+        font-style: italic
+        font-size: 15px
+        font-weight: 400
+        line-height: 24px
+        text-align: center
+        margin-top: 15px

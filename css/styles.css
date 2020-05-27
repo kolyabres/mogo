@@ -1,0 +1,490 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+/* line 6, ../../../Projects/mogo/sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../../../Projects/mogo/sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+/* line 32, ../../../Projects/mogo/sass/_reset.scss */
+*[hidden] {
+    display: none;
+}
+
+/* line 35, ../../../Projects/mogo/sass/_reset.scss */
+body {
+    line-height: 1;
+}
+
+/* line 38, ../../../Projects/mogo/sass/_reset.scss */
+menu, ol, ul {
+    list-style: none;
+}
+
+/* line 41, ../../../Projects/mogo/sass/_reset.scss */
+blockquote, q {
+    quotes: none;
+}
+
+/* line 44, ../../../Projects/mogo/sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* line 49, ../../../Projects/mogo/sass/_reset.scss */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* line 1, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header {
+    height: 1000px;
+    background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url("../assets/img/header-background.png");
+    background-position: center center, center center;
+    background-size: cover;
+}
+
+/* line 7, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+/* line 14, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header .header-top .logo__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* line 20, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header .header-top .nav {
+    display: flex;
+    list-style: none;
+}
+
+/* line 24, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header .header-top .nav__item {
+    margin-right: 55px;
+}
+
+/* line 27, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header .header-top .nav__item:last-child {
+    margin-right: 0;
+}
+
+/* line 30, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header .header-top .nav__item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* line 37, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header .header-top .nav__item a:after {
+    display: block;
+    content: "";
+    position: relative;
+    top: 14px;
+    border-bottom: 3px solid #fce38a;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+/* line 46, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header .header-top .nav__item a:hover {
+    color: #fce38a;
+}
+
+/* line 49, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header .header-top .nav__item a:hover:after {
+    transform: scaleX(1);
+}
+
+/* line 52, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header .header-top .nav__item svg {
+    fill: #fff;
+}
+
+/* line 55, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header .header-top .nav__item svg:hover {
+    cursor: pointer;
+    fill: #fce38a;
+}
+
+/* line 59, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header__subtitle {
+    color: #fff;
+    font-family: "Kaushan Script", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* line 67, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header__title {
+    color: #fff;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 42px;
+}
+
+/* line 76, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 124px;
+}
+
+/* line 81, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header__button button {
+    border: 3px solid #fff;
+    background: none;
+    padding: 15px 33px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+/* line 92, ../../../Projects/mogo/sass/blocks/_header.sass */
+.header__button button:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* line 1, ../../../Projects/mogo/sass/blocks/_services.sass */
+.services {
+    margin-top: 46px;
+}
+
+/* line 4, ../../../Projects/mogo/sass/blocks/_services.sass */
+.services .services-list {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 66px;
+    height: 240px;
+}
+
+/* line 12, ../../../Projects/mogo/sass/blocks/_services.sass */
+.services .services-list .service-list-item {
+    width: 335px;
+    display: flex;
+}
+
+/* line 16, ../../../Projects/mogo/sass/blocks/_services.sass */
+.services .services-list .service-list-item__title {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* line 22, ../../../Projects/mogo/sass/blocks/_services.sass */
+.services .services-list .service-list-item__text {
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+/* line 30, ../../../Projects/mogo/sass/blocks/_services.sass */
+.services .services-list .service-list-item .service-list-item-right {
+    margin-left: 29px;
+}
+
+/* line 1, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team {
+    margin-top: 92px;
+}
+
+/* line 4, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-text {
+    color: #999;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 123px;
+    margin-top: 46px;
+    text-align: center;
+}
+
+/* line 14, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 92px;
+}
+
+/* line 19, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item {
+    width: 380px;
+}
+
+/* line 22, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item__img {
+    height: 470px;
+    width: 380px;
+}
+
+/* line 26, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-top {
+    position: relative;
+}
+
+/* line 29, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-top:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+    background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* line 41, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-top:hover {
+    background: #95e1d3;
+}
+
+/* line 44, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-top:hover:after {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-10px, -10px);
+}
+
+/* line 49, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-top:hover .team-social {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* line 53, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-top:hover .team-list-item__img {
+    transform: translate(-10px, -10px);
+}
+
+/* line 56, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item__img {
+    transition: all .3s ease-in-out;
+}
+
+/* line 59, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-social {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
+    display: flex;
+    position: absolute;
+    top: calc(207px - 10px);
+    left: calc(78px - 10px);
+    z-index: 999;
+}
+
+/* line 69, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-social:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* line 73, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-social__item {
+    height: 56px;
+    width: 56px;
+    background: #fce38a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* line 81, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-social__item svg {
+    fill: #f38181;
+}
+
+/* line 84, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-social__item:hover {
+    background: #f38181;
+}
+
+/* line 87, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item .team-social__item:hover svg {
+    fill: #fff;
+}
+
+/* line 90, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item__name {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 31px;
+}
+
+/* line 98, ../../../Projects/mogo/sass/blocks/_team.sass */
+.team .team-list .team-list-item__position {
+    color: #999;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* line 1, ../../../Projects/mogo/sass/blocks/_footer.sass */
+.footer {
+    margin-top: 82px;
+}
+
+/* line 4, ../../../Projects/mogo/sass/blocks/_footer.sass */
+.footer__hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+}
+
+/* line 9, ../../../Projects/mogo/sass/blocks/_footer.sass */
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 61px;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* line 16, ../../../Projects/mogo/sass/blocks/_footer.sass */
+.footer .footer-content .copyright {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* line 21, ../../../Projects/mogo/sass/blocks/_footer.sass */
+.footer .footer-content .copyright__company {
+    color: #f38181;
+    text-decoration: none;
+}
+
+/* line 25, ../../../Projects/mogo/sass/blocks/_footer.sass */
+.footer .footer-content .footer-form {
+    display: flex;
+}
+
+/* line 28, ../../../Projects/mogo/sass/blocks/_footer.sass */
+.footer .footer-content .footer-form__input {
+    border: 1px solid #e7e7e7;
+    color: #cccccc;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    height: 40px;
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+
+/* line 40, ../../../Projects/mogo/sass/blocks/_footer.sass */
+.footer .footer-content .footer-form__submit {
+    border: none;
+    background-color: #95e1d3;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0 34px;
+}
+
+/* line 9, ../../../Projects/mogo/sass/styles.sass */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* line 13, ../../../Projects/mogo/sass/styles.sass */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* line 18, ../../../Projects/mogo/sass/styles.sass */
+.section__hr {
+    height: 3px;
+    width: 60px;
+    background: #f38181;
+    margin-top: 42px;
+}
+
+/* line 24, ../../../Projects/mogo/sass/styles.sass */
+.section .subtitle {
+    color: #333;
+    font-family: "Kaushan Script", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* line 30, ../../../Projects/mogo/sass/styles.sass */
+.section .title {
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 22px;
+}
+
+/*# sourceMappingURL=styles.css.map */

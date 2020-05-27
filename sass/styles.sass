@@ -1,0 +1,36 @@
+@import "reset"
+@import "variables"
+
+@import "blocks/header"
+@import "blocks/services"
+@import "blocks/team"
+@import "blocks/footer"
+
+body
+  margin: 0
+  font-family: "Montserrat", sans-serif
+
+.container
+  width: 1200px
+  margin: 0 auto
+
+.section
+  &__hr
+    height: 3px
+    width: 60px
+    background: $red
+    margin-top: 42px
+
+  .subtitle
+    color: $dark-font
+    font-family: "Kaushan Script", sans-serif
+    font-size: 24px
+    text-align: center
+
+  .title
+    color: $dark-font
+    font-size: 30px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    margin-top: 22px
